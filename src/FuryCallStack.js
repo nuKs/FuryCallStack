@@ -26,6 +26,7 @@
 
   FuryCallStack.prototype.exec = function(opts) {
     var result = null;
+    var mutateContent = (typeof opts.mutateContent === 'undefined') ? true : opts.mutateContent;
 
     opts = opts || {};
 
@@ -40,7 +41,13 @@
         result = call.exec(opts);
       }
       else {
-        result.then(call.exec.bind(call, opts), errorCall);
+        if (!mutateContent) {
+          result = result.then(call.exec.bind(call, opts), errorCall);
+        }
+        else {
+          result = result
+          .then(call._fn.bind(call._object), errorCall); // @todo put into FuryCall
+        }
       }
 
     }
