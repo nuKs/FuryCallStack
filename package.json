@@ -1,15 +1,15 @@
 {
-  "name": "FuryCallQueue",
+  "name": "FuryCallStack",
   "version": "0.0.0",
   "description": "Function call chain",
-  "main": "dist/FuryCallQueue.js",
+  "main": "dist/FuryCallStack.js",
   "scripts": {
     "test": "./node_modules/karma/bin/karma start karma.conf.js --single-run",
     "postinstall": "cd node_modules/when && npm run browserify && cp build/when.js ../../dist/when.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nuKs/FuryCallQueue.git"
+    "url": "https://github.com/nuKs/FuryCallStack.git"
   },
   "keywords": [
     "call",
@@ -19,9 +19,9 @@
   "author": "Thibault PIRONT <gse.nuks@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nuKs/FuryCallQueue/issues"
+    "url": "https://github.com/nuKs/FuryCallStack/issues"
   },
-  "homepage": "https://github.com/nuKs/FuryCallQueue",
+  "homepage": "https://github.com/nuKs/FuryCallStack",
   "devDependencies": {
     "browserify": "^9.0.3",
     "gulp": "^3.8.10",

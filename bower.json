@@ -1,14 +1,14 @@
 {
-  "name": "FuryCallQueue",
+  "name": "FuryCallStack",
   "version": "0.0.0",
-  "homepage": "https://github.com/nuKs/FuryCallQueue",
+  "homepage": "https://github.com/nuKs/FuryCallStack",
   "authors": [
     "Thibault PIRONT <gse.nuks@gmail.com>"
   ],
   "description": "Function call chain",
   "main": [
     "dist/when.js",
-    "dist/FuryCallQueue.js"
+    "dist/FuryCallStack.js"
   ],
   "moduleType": [
     "globals",
