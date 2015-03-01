@@ -1,0 +1,34 @@
+{
+  "name": "FuryCallQueue",
+  "version": "0.0.0",
+  "homepage": "https://github.com/nuKs/FuryCallQueue",
+  "authors": [
+    "Thibault PIRONT <gse.nuks@gmail.com>"
+  ],
+  "description": "Function call chain",
+  "main": [
+    "dist/when.js",
+    "dist/FuryCallQueue.js"
+  ],
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "call",
+    "chain",
+    "asynchronous"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "FuryCall": "nuKs/FuryCall"
+  }
+}
